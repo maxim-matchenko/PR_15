@@ -1,4 +1,10 @@
-﻿using System;
+﻿//****************************************************************************
+//* Практическая работа N15                                                  *
+//* Выполнил: Матченко M.C., группа 2-ИСП-оКФ                                *
+//* Вариант 3                                                                *
+//* Задание: Выполнение операций с объектами файловой системы                *
+//****************************************************************************
+using System;
 using System.IO;
 using System.Text;
 namespace PR_15
@@ -26,7 +32,7 @@ namespace PR_15
                 bool writeOk = false;
                 try
                 {
-                    Console.WriteLine("Здравствуйте.\nУкажите путь нахождения файла, \n\tнапример: D:\\Documents\\2ИСП\\PR17_Task3.txt");
+                    Console.WriteLine("Здравствуйте.\nУкажите путь нахождения файла, \nнапример: D:\\Documents\\2ИСП\\PR17_Task3.txt");
                     filepath = Console.ReadLine();
                     if (string.IsNullOrWhiteSpace(filepath))// проверка на пустой путь к файлу
                     {
